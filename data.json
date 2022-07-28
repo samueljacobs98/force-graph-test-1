@@ -1,0 +1,22 @@
+{
+  "nodes": [
+    { "id": "DEC", "team": true },
+    { "id": "Operation Bigfoot", "team": true },
+    { "id": "MTD-API", "team": true },
+    { "id": "Nathan", "team": false },
+    { "id": "Sean", "team": false },
+    { "id": "Samuel", "team": false },
+    { "id": "Priya", "team": false }
+  ],
+  "links": [
+    { "source": "Nathan", "target": "DEC", "value": 1 },
+    { "source": "Nathan", "target": "Operation Bigfoot", "value": 1 },
+    { "source": "Samuel", "target": "DEC", "value": 1 },
+    { "source": "Samuel", "target": "Operation Bigfoot", "value": 1 },
+    { "source": "Samuel", "target": "MTD-API", "value": 1 },
+    { "source": "Sean", "target": "DEC", "value": 1 },
+    { "source": "Sean", "target": "MTD-API", "value": 1 },
+    { "source": "Priya", "target": "DEC", "value": 1 },
+    { "source": "Priya", "target": "Operation Bigfoot", "value": 1 }
+  ]
+}
