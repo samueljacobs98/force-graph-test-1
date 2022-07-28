@@ -11,14 +11,13 @@
       width: 60px;
     }
   </style>
-  <script src="//unpkg.com/three"></script>
-  <script src="//unpkg.com/three/examples/js/renderers/CSS2DRenderer.js"></script>
+  <!-- <script src="//unpkg.com/three"></script> -->
+  <!-- <script src="//unpkg.com/three/examples/js/renderers/CSS2DRenderer.js"></script> -->
   <script src="//unpkg.com/3d-force-graph"></script>
 </head>
 
 <body>
   <div id="3d-graph"></div>
-
   <script>
     // const generateLabel = (node) => {
     //   const nodeLabel = document.createElement("div");
@@ -36,15 +35,11 @@
     //       .nodeLabel("id")
     //       .nodeAutoColorBy("team");
     // Group dictates colour
-    const Graph = ForceGraph3D({
-      extraRenderers: [new THREE.CSS2DRenderer()],
-    })(document.getElementById("3d-graph"))
+    const Graph = ForceGraph3D()(document.getElementById("3d-graph"))
+      // { extraRenderers: [new THREE.CSS2DRenderer()] }
       .jsonUrl("./data.json")
       //   .jsonUrl("./miserables.json")
-      //   .nodeLabel((node) => {
-      //     const label = generateLabel(node);
-      //     return label;
-      //   })
+      // .nodeLabel((node) => generateLabel(node))
       .nodeLabel("id")
       .nodeAutoColorBy("team");
   </script>
